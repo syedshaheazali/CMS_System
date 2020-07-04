@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>TAE - New Engineer </title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+</head>
+
+    
+<body>
+            <form action="newengineer.php" method="POST">
+						<div class="wrap">		
+                        <table style="color:white;" >
+                            <tr>  <td>Emp Id </td><td><input type="text" name="emp_id" />   </td> </tr>
+                            <tr> <td> Name </td><td>   <input type="text" name="emp_name" required /> </td>  </tr>
+                            <tr> <td> Contact No </td>    <td>  <input type="text" name="emp_phno" required /></td></tr>
+                               <tr><td>  Joining Date &nbsp;  </td><td>  <input type="text" name="emp_doj" required />yyyy-mm-dd </td></tr>
+                            <tr> <td> Address </td> <td><textarea   name="emp_address" ></textarea></td> </tr>
+                            <tr><td>  Resign Date </td> <td> <input type="text" value="NA" name="emp_dol" required/></td> </tr>
+                            <tr><td> Emp Type </td><td>
+                                   <select name="emp_type">
+                                      <option value="Permanent">   Permanent    </option>
+                                      <option value="Contract">   Contract    </option>
+                                   </select>
+                            </td></tr>
+                            <!-- <tr><td>Proof Id</td><td><input type="text" name="emp_proof"/></td> </tr> -->
+                            <tr> <td><input type="reset" value="Cancel"/></td>
+                                <td><input type="submit" value="Submit"/></td>
+                            </tr>
+                        </table>
+                       </div>                                   
+                    </form>
+<script src="js/index.js"></script>
+
+</body>
+
+</html>
+                                          

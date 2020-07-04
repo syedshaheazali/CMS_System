@@ -10,20 +10,24 @@
 
 <body>
   
-    <form action="HomePage.html" method="POST">
+    <form action="Login.php" method="POST">
   <div class="wrap">
 		<div class="avatar">
       <img src="images/pressingButton_blue.gif">
 		</div>
-		<input type="text" placeholder="username" name="username" required >
+		<input type="text" placeholder="Client_Username" name="Client_Username" required >
                 	       
                 <div class="bar">
 			<i></i>
 		</div>
-		<input type="password" placeholder="password" name="password" required>
+		<input type="password" placeholder="Client_Password" name="Client_Password" required>
 		<!--<a href="" class="forgot_link">forgot ?</a>-->
                 
-                <button type="submit">Sign in</button>
+                <button name= "Login" type="submit">Sign in</button>
+				<br>
+				<br>
+				<font color="white" size="4px" > <center><a style="color:white" href='signup.html' >  Click here to Register! </a> </center></font>
+				
 	</div>
     </form>
 

@@ -1,0 +1,14 @@
+CREATE TABLE `complaints` (
+  `complaint_id` int(20) AUTO_INCREMENT ,
+  `complaint_name` varchar(50) NOT NULL,
+  `complaint_phno` bigint(10) DEFAULT NULL,
+  `complaint_description` varchar(250) DEFAULT NULL,
+  `complaint_address` varchar(350) DEFAULT NULL,
+  `employee_assigned` varchar(50) NOT NULL,
+  `complaint_status` varchar(20) DEFAULT NULL,
+  `complaint_category` varchar(12) DEFAULT NULL,
+  `created_date` date DEFAULT NULL,
+  `last_modified_date` date DEFAULT NULL,
+  `closed_date` date DEFAULT NULL,
+  PRIMARY KEY (`complaint_id`)
+  );
