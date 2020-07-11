@@ -23,10 +23,10 @@
 <?php
 require "DBConnection.php";
 
-$query = 'SELECT (max(complaint_id)+1) FROM complaints;';
-$result = runQuery($query);
-
-echo $result;
+$query = "SELECT (max(complaint_id)+1) as cust_id FROM complaints;";
+$result = runQuery($pdo,$query);
+//$comma_separated = implode(',', $result);
+//echo $result;
 
 ?>
 <body data-spy="scroll" data-offset="0">
@@ -75,7 +75,7 @@ echo $result;
                         <table style="color:white" >
                             <tr> <td>
                                     Cust Id   
-                                </td><td></td> <td><input value="<?php echo $result; ?>" type="text" class="css_input" name="cust_id" />
+                                </td><td></td> <td><input value="<?php echo $result[0]; ?>" type="text" class="css_input" name="cust_id" readonly />
 								<br/>
                                 </td>
                             </tr>

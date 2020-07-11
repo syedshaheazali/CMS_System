@@ -10,7 +10,7 @@ body {
 	font-family: "Lato" ;
 }
 .wrap {
-	width:250px;
+	width:30%;
 	height: auto;
 	margin: auto;
 	margin-top: 10%;
@@ -52,16 +52,17 @@ table , th, td {border-bottom: 2px dotted grey;}
 	display: block;
 }
 .wrap input {
-	border: none;
-	background: #fff;
-        font-family:Lato ;
-        font-weight:700 ;
-	display: block;
-	height: 40px;
-	outline: none;
-	width: calc(100% - 24px) ;
-	margin: auto;
-	padding: 6px 12px 6px 12px;
+    border: none;
+    color: black;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    border-radius: 14px;
+    transition-duration: 0.4s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .wrap_table textarea {
